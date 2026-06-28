@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Painel GT</title>
+
+<link rel="stylesheet"
+href="admin.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Painel GT Materiais</h1>
+
+<div class="formulario">
+
+<input
+type="text"
+id="nome"
+placeholder="Nome do produto">
+
+<input
+type="text"
+id="preco"
+placeholder="Preço">
+
+<select id="categoria">
+
+<option value="eletrica">
+Elétrica
+</option>
+
+<option value="hidraulica">
+Hidráulica
+</option>
+
+<option value="ferragens">
+Ferragens
+</option>
+
+<option value="ferramentas">
+Ferramentas
+</option>
+
+<option value="tintas">
+Tintas
+</option>
+
+<option value="promocoes">
+Promoções
+</option>
+
+</select>
+
+<input
+type="text"
+id="imagem"
+placeholder="Link da imagem">
+
+<textarea
+id="descricao"
+placeholder="Descrição do produto">
+</textarea>
+
+<button onclick="salvarProduto()">
+Adicionar Produto
+</button>
+
+</div>
+
+<h2>Produtos cadastrados</h2>
+
+<div id="listaProdutos">
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
